@@ -1,0 +1,63 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to <%= title %> page</h1>
+    
+    <!-- Project 1 -->
+    <section>
+      <h2>Bank Marketing Data</h2>    
+      <p>
+        * Created a Regression Model to identify customers that are likely to convert Methods used:
+        * Performing Exploratory Data Analysis to identify null values, data redundancies, outliers
+          * Identify use cases for predictive models
+        * Preprocessing of features to align with Logistic Regression guidelines
+        * normalization of continuous features, through log transformation
+        * feature standardization
+        * creating binary features
+        * creating one-hot encoded features
+        * Creating a Logistic Regression to achieve an 89.4% accuracy
+        * Visualizing results using a confusion matrix
+        Findings:
+        * highest predictors of customers likely to convert were:
+        * Having previously been contacted
+        * Retained/returning customers
+        * Retired individuals
+      </p>
+      <img src="/img/BankMarketingData.png" alt="BankMarketingData" style="width: 500px; height: 700px">
+    </section>
+
+    <!-- Project 2 -->
+    <section>
+      <h2>Seattle House Prices Prediction</h2>
+      <p>
+        * Predict Housing prices using a linear regression model, polynomial regression model
+        * Evaluate the model parameters using Ridge regression Methods used:
+        * Data Cleaning: Remove, and replace missing and null values
+        * Exploratory Data Analysis: identifying outliers and correlations between data
+        * Developing the model based on selected features 
+        * number of floors, waterfront location, latitude, bedrooms etc. 
+        * was accurately able to predict house prices with a 64.7% accuracy
+      </p>
+      <img src="/img/SeattleHousePricesPrediction.png" alt="SeattleHousePricesPrediction" style="width: 500px; height: 700px">
+    </section>
+
+    <!-- Project 3 -->
+    <section>
+      <h2>Securities Portfolio Risk Calculator</h2>
+      <p>
+        * Streamlined access to key financial metrics for financial investors for portfolio optimization through presented metrics for portfolio beta, Capital Asset Pricing Model, Jensen’s Alpha, Portfolio Standard Deviation etc.
+        * Ensured consistent data through real-time trading data by web scraping (Beautiful Soup) and APIs calls (Yahoo Finance)
+        * Allow for user input securities to create a portfolio with stocks, and weights
+      </p>
+      <img src="/img/SecuritiesPortfolio.png" alt="SecuritiesPortfolio" style="width: 500px; height: 500px">
+    </section>
+  </div>
+</main>
+
+<!--bottom nav-->
+
+<!--script section-->
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
